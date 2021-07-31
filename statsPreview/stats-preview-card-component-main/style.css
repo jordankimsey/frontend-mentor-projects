@@ -1,0 +1,245 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+.img {
+    max-width: 100%;
+}
+
+:root {
+    /* primary colors */
+    --main-bg-color: hsl(233, 47%, 7%);
+    --card-bg-color: hsl(244, 38%, 16%);
+    --accent-color: hsl(277, 64%, 61%);
+    /* main heading & stats */
+    --white-bg: hsl(0, 0%, 100%);
+    /* main paragraph */
+    --paragraph-color: hsla(0, 0%, 100%, 0.75);
+    /* stat heading */
+    --stat-heading-color: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: white;
+    font-size: 15px;
+    font-family: 'Lexend+Deca', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+     margin: 30px 30px 30px 30px; 
+    padding: 0px 0px 20px;  
+    border-radius: 10px;
+    
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    padding: 0px 0px 20px; 
+    
+}
+
+.card .left {
+   padding-top: 20px;
+}
+
+.container .card-img {
+    background-image: url('/images/image-header-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 340px; 
+    border-radius: 15px;
+}
+
+.container .card-img .overlay {
+    background-color: hsla(277, 64%, 61%, .7);;
+    height: 340px;
+}   
+
+.card-stats {
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    padding-top: 2px;
+    
+}
+
+.card-stats span {
+    display: block;
+    color: var(--stat-heading-color);
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+
+    .card {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .card-img {
+        background-image: url('/images/image-header-desktop.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        /* height: 340px; */
+        /* height: 340px;  */
+        /* height: 50%;
+        border-radius: 15px; */
+    } 
+
+    .container .card-img .overlay {
+        background-color: hsla(277, 64%, 61%, .7);;
+        height: 100%;
+    }
+
+    .card-stats {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2px;
+        
+    }
+
+
+}
+
+
+
+/* .head-img.overlay {
+    background-color: hsl(277, 64%, 61%);
+    height: 100%;
+    width: 500px;
+    z-index: 1;    
+} */
+/* 
+.body-text {
+    color: var(--paragraph-color);
+}
+
+.info .stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.stats span {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: var(--stat-heading-color);
+    font-size: 12px;
+}
+
+.stats-header {
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+
+ @media(max-width: 375px) {
+
+   .body-text {
+       text-align: center;
+   }
+   .info h1{
+       text-align: center;
+   }
+
+   .head-img {
+       width: 100%;
+       height: 300px;
+      display: flex;
+   }
+
+   .info {
+       width: 75%;
+       height: 75vh;
+   }
+
+   .stats {
+       text-align: center;
+       margin-bottom: 50px;
+   }
+
+   .companies {
+       padding-top: 25px;
+   }
+} 
+
+@media(max-width: 830px) {
+    .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: auto;
+    }
+
+    .info {
+        
+         width: 325px; 
+        padding-top: 10px;
+    }
+
+    .head-img {
+        background-image: url('/images/image-header-mobile.jpg')
+        no-repeat center/cover;
+        height: 200px;
+        width: 100%; 
+        } 
+
+     .stats { 
+        height: 200px;
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+        height: 200px;
+        } 
+ } 
+
+@media(min-width: 831px) {
+    
+    .container {
+        width: 800px;
+    }
+
+    .head-img {
+        background-image: url('/images/image-header-desktop.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+    }
+}  */
+
