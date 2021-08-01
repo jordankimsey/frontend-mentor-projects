@@ -1,0 +1,160 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+/* ### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+/* font-family: 'Big Shoulders Display', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* ### Primary */
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+--paragraphs-white: hsla(0, 0%, 100%, 0.75);
+/* (background, headings, buttons) */
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+p {
+    color: var(--paragraphs-white);
+    
+}
+
+button {
+    background-color: var(--Very-light-gray);
+    padding: 12px;
+    width: 120px;
+    border-radius: 20px 20px;
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 1.2px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    padding: 30px 50px;
+}
+
+.card.sedan {
+    background-color: var(--Bright-orange); 
+}
+
+.card.sedan button {
+    color: var(--Bright-orange);
+    border: 1px solid var(--Bright-orange);
+}
+
+.card.sedan button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.card.suv {
+    background-color: var(--Dark-cyan);
+}
+
+.card.suv button {
+    color: var(--Dark-cyan);
+    border: 1px solid var(--Dark-cyan);
+}
+
+.card.suv button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.card.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+.card.luxury button {
+    color: var(--Very-dark-cyan);
+    border: 1px solid var(--Very-dark-cyan);
+}
+
+.card.luxury button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+
+@media (min-width: 768px) {
+
+   .container {
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       width: 75%;
+       margin: auto; 
+   }
+
+   .card {
+       height: 70%;
+   }
+
+  .card p {
+      margin-top: 50px;
+  }
+
+   button {
+       margin-top: 50%;
+   }
+
+   .card.sedan {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card.luxury {
+    border-radius: 0px 10px 10px 0px;
+}
+}
