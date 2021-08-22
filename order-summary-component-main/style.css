@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* - Mobile: 375px
+- Desktop: 1440px
+
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+:root {
+    /* ### Primary */
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);  
+    /* ### Neutral */
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--pale-blue);
+    
+}
+
+.card {
+    max-width: 450px;
+    width: 75%;
+    height: 75vh;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.card-header {
+    width: 100%;
+}
+
+.card-header img {
+    /* background-position: center center;
+    background-size: cover; */
+    width: 100%;
+
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    width: 85%;
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
