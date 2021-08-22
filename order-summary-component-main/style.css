@@ -38,9 +38,9 @@ body {
 }
 
 .card {
-    max-width: 400px;
+    max-width: 350px;
     width: 80%;
-    height: 75vh;
+    height: 80vh;
     border-radius: 20px;
     background-color: white;
     overflow: hidden;
@@ -74,16 +74,64 @@ body {
     background-color: var(--very-pale-blue);
     width: 85%;
     margin: auto;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.pricing h2 {
+    font-size: 18px;
+}
+
+.pricing h3 {
+    font-size: 15px;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+.change {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.change a:hover {
+    text-decoration: none;
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    /* flex-direction: ; */
     align-items: center;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.buttons .submit {
+   background-color: var(--bright-blue);
+   border-radius: 10px;
+   color: white;
+   padding: 18px 10px;
+   font-weight: 700;
+}
+
+.buttons .cancel {
+    background-color: white;
+    padding-top: 20px;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+
+.buttons .cancel:hover {
+    color: black;
+}
+
+button {
+    cursor: pointer;
+    width: 80%;
     padding: 10px;
+    border: none;
 }
 
 
