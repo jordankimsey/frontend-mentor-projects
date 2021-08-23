@@ -40,7 +40,6 @@ body {
 .card {
     max-width: 350px;
     width: 80%;
-    height: 80vh;
     border-radius: 20px;
     background-color: white;
     overflow: hidden;
@@ -54,6 +53,7 @@ body {
     /* background-position: center center;
     background-size: cover; */
     width: 100%;
+    height: 175px;
 
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 .pricing h2 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .pricing h3 {
@@ -103,9 +103,10 @@ body {
     justify-content: center;
     /* flex-direction: ; */
     align-items: center;
-    padding-top: 20px;
+    padding-top: 5px;
     margin-bottom: 50px;
     margin-top: 20px;
+    position: relative;
 }
 
 .buttons .submit {
@@ -113,14 +114,24 @@ body {
    border-radius: 10px;
    color: white;
    padding: 18px 10px;
-   font-weight: 700;
+   font-weight: 900;
+   -webkit-box-shadow: 0px 15px 15px 0px var(--pale-blue); 
+    box-shadow: 0px 15px 15px 0px var(--pale-blue);
+}
+
+.buttons .submit:hover {
+    background-color: hsla(245, 75%, 52%, 0.7); 
 }
 
 .buttons .cancel {
-    background-color: white;
-    padding-top: 20px;
+    background-color: transparent;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 15px;
     color: var(--desaturated-blue);
-    font-weight: 700;
+    font-weight: 900;
+    position: absolute;
+    bottom: -65px;
 }
 
 .buttons .cancel:hover {
@@ -134,4 +145,14 @@ button {
     border: none;
 }
 
+@media (min-width: 732px) {
+    .card {
+        max-width: 400px;
+        padding-bottom: 20px;
+    }
+
+    .buttons .cancel {
+       bottom: -75px;
+    }
+}
 
